@@ -31,9 +31,8 @@ namespace DesignPatterns.ModelBuilder
             return this;
         }
         public Vehicle Build()
-
         {
-            return new Car(color, brand, model, year);
+            return new ExtendedCar(color, brand, model, year);
         }
     }
 }

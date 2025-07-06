@@ -7,11 +7,10 @@ namespace DesignPatterns.Factories
     {
         public override Vehicle Create()
         {
-            var vehicle = new CarModelBuilder()
+            return new CarModelBuilder()
                 .setModel("Mustang")
                 .setColor("black")
                 .Build();
-            return new DefaultPropertiesVehicleDecorator(vehicle);
         }
     }
 }

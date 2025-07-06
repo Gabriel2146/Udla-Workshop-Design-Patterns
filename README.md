@@ -32,23 +32,7 @@ Se extiende el builder (`CarModelBuilder`) para construir vehículos con el año
 
 - **Clases principales:**
 
-  - `Vehicle` (abstracta): Clase base para vehículos con propiedades comunes (Color, Brand, Model, etc.).
-  - `Car` (hereda de Vehicle): Implementa vehículo tipo coche.
-  - `ExtendedCar` (hereda de Car): Añade propiedad `Year` y un diccionario `DefaultProperties` con 20 propiedades por defecto.
-  - `CarModelBuilder`: Builder para construir instancias de `ExtendedCar` con propiedades configurables.
-  - `CarFactory` (abstracta): Define método `Create()` para crear vehículos.
-  - `FordMustangFactory`, `FordExplorerFactory`, `FordEscapeFactory` (heredan de CarFactory): Implementan `Create()` usando `CarModelBuilder` para crear vehículos específicos.
-  - `IVehicleRepository`: Interfaz para repositorios de vehículos.
-  - `MyVehiclesRepository`: Implementa `IVehicleRepository` usando almacenamiento en memoria para pruebas.
-  - `HomeController`: Controlador MVC que usa las fábricas y el repositorio para manejar la lógica de la aplicación.
-
-- **Relaciones:**
-
-  - `ExtendedCar` hereda de `Car`, que hereda de `Vehicle`.
-  - `CarModelBuilder` construye objetos `ExtendedCar`.
-  - Las fábricas (`FordMustangFactory`, etc.) usan `CarModelBuilder` para crear vehículos.
-  - `HomeController` depende de `IVehicleRepository` y usa las fábricas para crear vehículos.
-  - `MyVehiclesRepository` implementa `IVehicleRepository`.
+![Untitled - Frame 3](https://github.com/user-attachments/assets/70f77a0c-2507-451b-8baf-dcdb34b3cf6f)
 
 ### Justificación Técnica
 
